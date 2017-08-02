@@ -11,3 +11,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias l='ls -AlFh'
+alias memusg='ps -eo rss,pid,comm,args | sort -n'
+alias rmbak='find . -name "*~" -delete -print'
+alias usage='du -sh [A-z]** | sort -n'
+alias drmi='docker rmi $(docker images -q --filter "dangling=true")'
+alias lns='ss -estp'
+alias gno='xdg-open'
+function jql() {
+    jq '.' "$1" | less
+}
+if [[ -n "$DISPLAY" ]] && command -v setxkbmap >/dev/null; then
+    setxkbmap -option caps:none
+fi

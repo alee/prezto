@@ -9,3 +9,8 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+if command -v "systemctl" > /dev/null 2>&1; then
+	eval $(systemctl --user show-environment | grep SSH_AUTH_SOCK)
+	export SSH_AUTH_SOCK
+fi

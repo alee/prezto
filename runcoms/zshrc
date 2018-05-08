@@ -18,6 +18,7 @@ alias usage='du -sh [A-z]** | sort -n'
 alias drmi='docker rmi $(docker images -q --filter "dangling=true")'
 alias lns='ss -estp'
 alias gno='xdg-open'
+alias doc='docker-compose'
 function jql() {
     jq '.' "$1" | less
 }

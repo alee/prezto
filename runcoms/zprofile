@@ -37,7 +37,7 @@ fi
 typeset -gU cdpath fpath mailpath path
 
 # Set the the list of directories that cd searches.
-cdpath=($HOME/workspace $HOME .. $HOME/Dropbox $cdpath)
+cdpath=($cdpath .. $HOME/workspace $HOME $HOME/Dropbox)
 
 # Set the list of directories that Zsh searches for programs.
 path=(

@@ -11,6 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+cdpath=($cdpath .. $HOME/workspace $HOME $HOME/Dropbox)
 alias l='ls -AlFh'
 alias memusg='ps -eo rss,pid,comm,args | sort -n'
 alias rmbak='find . -name "*~" -delete -print'

@@ -42,10 +42,9 @@ cdpath=($cdpath .. $HOME/workspace $HOME $HOME/Dropbox)
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  /opt/pycharm/bin
-  /opt/idea/bin
   $HOME/.node_global/bin
   $HOME/.local/bin
+  $HOME/go/bin
   $path
 )
 

@@ -43,6 +43,7 @@ cdpath=($cdpath .. $HOME/workspace $HOME $HOME/Dropbox)
 path=(
   /usr/local/{bin,sbin}
   $HOME/.node_global/bin
+  $HOME/.poetry/bin
   $HOME/.local/bin
   $HOME/go/bin
   $path

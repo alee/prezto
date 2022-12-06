@@ -159,7 +159,7 @@ zstyle ':prezto:module:prompt' theme 'alee'
 zstyle ':prezto:module:python:virtualenv' auto-switch 'no'
 
 # Automatically initialize virtualenvwrapper if pre-requisites are met.
-zstyle ':prezto:module:python:virtualenv' initialize 'yes'
+zstyle ':prezto:module:python:virtualenv' initialize 'no'
 
 #
 # Ruby
